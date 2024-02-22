@@ -1,0 +1,70 @@
+
+/* Add this CSS to your Home.css file or your stylesheets */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.add-to-cart {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-to-cart img {
+  width: 80px; /* Adjust the size of the cart icon */
+  position: absolute;
+  top: 1%;
+  right: 3%;
+}
+
+.cart-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.img-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-wrapper span {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.btn-wrapper button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 20px; /* Adjust the size of the button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-wrapper button:hover {
+  background-color: #45a049;
+}
