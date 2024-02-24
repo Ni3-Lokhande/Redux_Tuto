@@ -1,7 +1,8 @@
 import React from "react";
 import './Home.css';
 
-const Home = () => {
+const Home = (props) => {
+    console.warn("props",props);      
   return (
     <div>
       <div className="add-to-cart">
@@ -20,7 +21,7 @@ const Home = () => {
         </div>
 
         <div className="btn-wrapper item">
-          <button> Add To Cart</button>
+          <button onClick={() => props.addToCartHandler()}> Add To Cart</button>
         </div>
       </div>
     </div>
