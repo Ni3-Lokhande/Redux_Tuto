@@ -1,13 +1,11 @@
 import React from "react";
 import './Home.css';
 
+
 const Home = (props) => {
-    console.warn("props",props);      
+    // console.warn("props",props);      
   return (
     <div>
-      <div className="add-to-cart">
-        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png"/>
-      </div>
       <h1> Home Component</h1>
       <div className="cart-wrapper">
 
@@ -21,7 +19,8 @@ const Home = (props) => {
         </div>
 
         <div className="btn-wrapper item">
-          <button onClick={() => props.addToCartHandler()}> Add To Cart</button>
+          <button className="addCart" onClick={() => props.addToCartHandler({price:1000,name:'i phone-14'})}> Add To Cart</button>
+          <button className="removeCart" onClick={() => props.removeToCartHandler()}> Remove To Cart</button>
         </div>
       </div>
     </div>
@@ -29,3 +28,6 @@ const Home = (props) => {
 };
 
 export default Home;
+
+
+

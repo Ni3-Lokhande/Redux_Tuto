@@ -12,17 +12,6 @@ h1 {
   color: #333;
 }
 
-.add-to-cart {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.add-to-cart img {
-  width: 80px; /* Adjust the size of the cart icon */
-  position: absolute;
-  top: 1%;
-  right: 3%;
-}
 
 .cart-wrapper {
   display: flex;
@@ -54,7 +43,7 @@ h1 {
   color: #555;
 }
 
-.btn-wrapper button {
+.addCart {
   background-color: #4caf50;
   color: #fff;
   padding: 15px 20px; /* Adjust the size of the button */
@@ -65,6 +54,22 @@ h1 {
   transition: background-color 0.3s;
 }
 
-.btn-wrapper button:hover {
+.addCart:hover {
   background-color: #45a049;
+}
+
+.removeCart {
+  margin-top: 20px;
+  background-color: rgba(255, 0, 0, 0.669);
+  color: #fff;
+  padding: 15px 20px; /* Adjust the size of the button */        
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.removeCart:hover {
+  background-color: red;
 }

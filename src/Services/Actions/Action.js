@@ -1,5 +1,5 @@
 
-    import { ADD_TO_CART } from "../Constants"
+    import { ADD_TO_CART,REMOVE_TO_CART } from "../Constants"
        
       export const addToCart = (data) => {
         return {
@@ -7,3 +7,12 @@
             data:data
         }
       }
+
+      export const removeToCart = () => {
+        // console.warn("action");
+        return {
+            type:REMOVE_TO_CART,
+        }
+      }
+
+   
